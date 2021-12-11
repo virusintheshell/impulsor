@@ -1,0 +1,9 @@
+EvaluacionesDataAccess-ObtenerCadenaCalificaciones.  14:17:22
+ObtenerCadenaCalificaciones - La conversión especificada no es válida.
+
+EvaluacionesDataAccess-ObtenerCadenaCalificaciones.  14:18:25
+ObtenerCadenaCalificaciones - La conversión especificada no es válida.
+
+EvaluacionesDataAccess-Editar.  14:26:51
+Editar - Error en el nivel de transporte al enviar la solicitud al servidor. (provider: TCP Provider, error: 0 - Se ha forzado la interrupción de una conexión existente por el host remoto.)
+

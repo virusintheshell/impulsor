@@ -1,0 +1,9 @@
+ReporteGeneralDataAccess-ArmarObjetoGeneral.  11:38:50
+ArmarObjetoGeneral - No se puede convertir un objeto DBNull en otros tipos.
+
+ReporteGeneralDataAccess-ArmarObjetoGeneral.  11:39:11
+ArmarObjetoGeneral - No se puede convertir un objeto DBNull en otros tipos.
+
+ReporteGeneralDataAccess-ObtenerReportePagosMensuales.  20:06:47
+ObtenerReportePagosMensuales - fecha
+

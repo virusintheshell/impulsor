@@ -1,0 +1,45 @@
+TareasDataAccess-ObtenerTareas.  12:16:06
+ObtenerTareas - Invalid column name 'idProfesor'.
+
+TareasDataAccess-ObtenerTareas.  12:16:16
+ObtenerTareas - Invalid column name 'idProfesor'.
+
+TareasDataAccess-ObtenerTareas.  12:28:37
+ObtenerTareas - idTarea
+
+TareasDataAccess-ObtenerTareas.  12:28:55
+ObtenerTareas - idTarea
+
+TareasDataAccess-ObtenerTareas.  12:30:05
+ObtenerTareas - idTarea
+
+RESPUESTAS.-  ID_TAREA_UNIQUE: 5fae7d7f-3da5-43a7-b2f9-fcfb80dbacbe RESPUESTA: 200 ID_DETALLE_TAREA:  184 13:19:42
+GuardarTareasAlumno -  FECHA:18/06/2021 13:19:42
+
+TareasDataAccess-ObtenerListaTareas.  16:01:15
+ObtenerListaTareas - Método no encontrado: 'Void PRASYDE.ControlEscolar.Entities.TareasEntregadas.set_idDetalleTarea(Int32)'.
+
+TareasDataAccess-ObtenerListaTareas.  16:01:22
+ObtenerListaTareas - Método no encontrado: 'Void PRASYDE.ControlEscolar.Entities.TareasEntregadas.set_idDetalleTarea(Int32)'.
+
+TareasDataAccess-ObtenerListaTareas.  16:01:31
+ObtenerListaTareas - Método no encontrado: 'Void PRASYDE.ControlEscolar.Entities.TareasEntregadas.set_idDetalleTarea(Int32)'.
+
+TareasDataAccess-ObtenerListaTareas.  16:01:56
+ObtenerListaTareas - Método no encontrado: 'Void PRASYDE.ControlEscolar.Entities.TareasEntregadas.set_idDetalleTarea(Int32)'.
+
+TareasDataAccess-ObtenerListaTareas.  16:02:14
+ObtenerListaTareas - Método no encontrado: 'Void PRASYDE.ControlEscolar.Entities.TareasEntregadas.set_idDetalleTarea(Int32)'.
+
+TareasDataAccess-GuardrComentariosTareasProfesor.  16:39:38
+GuardrComentariosTareasProfesor - Procedure or function 'USP_GUARDAR_TAREAS_PROFESOR' expects parameter '@PAGINA', which was not supplied.
+
+TareasDataAccess-ObtenerTareas.  21:16:39
+ObtenerTareas - comentarioProfesor
+
+TareasDataAccess-ObtenerTareas.  21:30:34
+ObtenerTareas - comentarioProfesor
+
+TareasDataAccess-ObtenerTareas.  21:33:04
+ObtenerTareas - comentarioProfesor
+

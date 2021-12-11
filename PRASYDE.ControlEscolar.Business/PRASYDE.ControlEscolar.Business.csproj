@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0542794E-DE66-45AE-9640-4A18D52ACEBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRASYDE.ControlEscolar.Business</RootNamespace>
+    <AssemblyName>PRASYDE.ControlEscolar.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlumnosBusiness.cs" />
+    <Compile Include="AsignaturasBusiness.cs" />
+    <Compile Include="AvisosBusiness.cs" />
+    <Compile Include="CambioGrupoBusiness.cs" />
+    <Compile Include="ConceptosBusiness.cs" />
+    <Compile Include="DetalleModalidadesBusiness.cs" />
+    <Compile Include="EvaluacionesBusiness.cs" />
+    <Compile Include="ExpedienteDigitalBusiness.cs" />
+    <Compile Include="FormularioBusiness.cs" />
+    <Compile Include="GeneralBusiness.cs" />
+    <Compile Include="GruposBusiness.cs" />
+    <Compile Include="InscripcionBusiness.cs" />
+    <Compile Include="MensajesBusiness.cs" />
+    <Compile Include="ModalidadBusiness.cs" />
+    <Compile Include="Notificaciones\EnvioNotificacion.cs" />
+    <Compile Include="Notificaciones\NotificacionFireBase.cs" />
+    <Compile Include="OfertaEducativaBusiness.cs" />
+    <Compile Include="PagosBusiness.cs" />
+    <Compile Include="PlanEducativoBusiness.cs" />
+    <Compile Include="PlantelesBusiness.cs" />
+    <Compile Include="Enumerados.cs" />
+    <Compile Include="Framework\General.cs" />
+    <Compile Include="MenuBusuniness.cs" />
+    <Compile Include="PerfilBusiness.cs" />
+    <Compile Include="ProfesoresBusiness.cs" />
+    <Compile Include="ProgramaEducativoBusiness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Framework\Seguridad.cs" />
+    <Compile Include="Framework\ValidarCabeceras.cs" />
+    <Compile Include="Framework\ValidarSesion.cs" />
+    <Compile Include="Reportes\ReporteGeneralBusiness.cs" />
+    <Compile Include="RolesBusiness.cs" />
+    <Compile Include="SesionBusiness.cs" />
+    <Compile Include="TareasBusiness.cs" />
+    <Compile Include="UsuariosBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PRASYDE.ControlEscolar.DataAcess\PRASYDE.ControlEscolar.DataAccess.csproj">
+      <Project>{33fc41f6-761a-40a3-b90a-5a36d440fd61}</Project>
+      <Name>PRASYDE.ControlEscolar.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRASYDE.ControlEscolar.Entities\PRASYDE.ControlEscolar.Entities.csproj">
+      <Project>{5a9cbfb4-3735-4bb0-8d42-6aecefdd4723}</Project>
+      <Name>PRASYDE.ControlEscolar.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

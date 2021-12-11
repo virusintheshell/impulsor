@@ -1,0 +1,12 @@
+MenuDataAcceess-Obtener.  15:31:51
+Obtener - No se puede encontrar la columna [idSubModulo].
+
+MenuDataAcceess-Obtener.  15:32:15
+Obtener - No se puede encontrar la columna [idSubModulo].
+
+MenuDataAcceess-ArmarObjetoGeneral.  15:32:55
+ArmarObjetoGeneral - No se puede encontrar la tabla 1.
+
+RESPUESTAS.-  ID_TAREA_UNIQUE: 96b74bee-2460-4145-a653-30292299edc4 RESPUESTA: 200 ID_DETALLE_TAREA:  181 20:43:45
+GuardarTareasAlumno -  FECHA:17/06/2021 20:43:45
+
