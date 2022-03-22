@@ -137,6 +137,7 @@
     <Compile Include="Controllers\DetalleModalidadController.cs" />
     <Compile Include="Controllers\EvaluacionesController.cs" />
     <Compile Include="Controllers\ExpedienteDigitalController.cs" />
+    <Compile Include="Controllers\FinanzasController.cs" />
     <Compile Include="Controllers\GruposController.cs" />
     <Compile Include="Controllers\InscripcionController.cs" />
     <Compile Include="Controllers\MensajesController.cs" />

@@ -57,6 +57,7 @@
     <Compile Include="DetalleModalidadesBusiness.cs" />
     <Compile Include="EvaluacionesBusiness.cs" />
     <Compile Include="ExpedienteDigitalBusiness.cs" />
+    <Compile Include="Finanzas\CalendarioDePagosBusiness.cs" />
     <Compile Include="FormularioBusiness.cs" />
     <Compile Include="GeneralBusiness.cs" />
     <Compile Include="GruposBusiness.cs" />
@@ -70,15 +71,15 @@
     <Compile Include="PlanEducativoBusiness.cs" />
     <Compile Include="PlantelesBusiness.cs" />
     <Compile Include="Enumerados.cs" />
-    <Compile Include="Framework\General.cs" />
+    <Compile Include="Notificaciones\Framework\General.cs" />
     <Compile Include="MenuBusuniness.cs" />
     <Compile Include="PerfilBusiness.cs" />
     <Compile Include="ProfesoresBusiness.cs" />
     <Compile Include="ProgramaEducativoBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Framework\Seguridad.cs" />
-    <Compile Include="Framework\ValidarCabeceras.cs" />
-    <Compile Include="Framework\ValidarSesion.cs" />
+    <Compile Include="Notificaciones\Framework\Seguridad.cs" />
+    <Compile Include="Notificaciones\Framework\ValidarCabeceras.cs" />
+    <Compile Include="Notificaciones\Framework\ValidarSesion.cs" />
     <Compile Include="Reportes\ReporteGeneralBusiness.cs" />
     <Compile Include="RolesBusiness.cs" />
     <Compile Include="SesionBusiness.cs" />

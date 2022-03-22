@@ -12,6 +12,7 @@ namespace PRASYDE.ControlEscolar.DataAcess
     using System.Collections;
     using System.Data.SqlClient;
     using PRASYDE.ControlEscolar.Entities;
+    using PRASYDE.ControlEscolar.DataAcess.ClasesExcel;
 
     public class EvaluacionesDataAccess : BaseDataAccess
     {
@@ -263,5 +264,38 @@ namespace PRASYDE.ControlEscolar.DataAcess
                 EscrituraLog.guardar("EvaluacionesDataAccess-GuardarDetalle. ", e.Message.ToString());
             }
         }
+
+
+        #region "METODO PARA EXPORTAR LA INFORMACIÓN A EXCEL"
+
+        public ExcelSheetResponse ExportarCalificacionesExcel(string idGrupo, int nivel)
+        {
+            SqlConnection connection = new SqlConnection(this.ConnectionString);
+            var response = new ExcelSheetResponse();
+
+            try
+            {
+                SqlCommand ObjCommand = new SqlCommand("USP_EXPORTAR_CALIFICACIONES", connection);
+                ObjCommand.CommandType = CommandType.StoredProcedure;
+                
+                ObjCommand.Parameters.Add("@ID_GRUPO", SqlDbType.VarChar).Value = idGrupo;
+                ObjCommand.Parameters.Add("@NIVEL", SqlDbType.Int).Value = nivel;
+                connection.Open();
+
+                System.Data.SqlClient.SqlDataAdapter adapter = new System.Data.SqlClient.SqlDataAdapter(ObjCommand);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                response = ExportarCalificaciones.ExportReport(ds);
+            }
+            catch (Exception e)
+            {
+                EscrituraLog.guardar("EvaluacionesDataAccess-ExportarCalificacionesExcel. ", e.Message.ToString());
+            }
+            finally { connection.Close(); connection.Dispose(); }
+
+            return response;
+        }
+
+        #endregion
     }
 }

@@ -97,7 +97,7 @@ namespace PRASYDE.ControlEscolar.DataAcess.Framework
 
                 client.Host = ConfigurationManager.AppSettings["clienteHost"].ToString();
                 client.EnableSsl =Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"]);
-               
+                
                 try
                 {
                     client.Send(msg);
@@ -106,6 +106,7 @@ namespace PRASYDE.ControlEscolar.DataAcess.Framework
                 {
                     string mensajeError = ex.Message;
                     respuestaGeneral = Convert.ToInt16(500);
+                    EscrituraLog.guardar("EnvioCorreoElectronicoContrasena-Enviar. ", ex.ToString());
                 }
             }
             return respuestaGeneral;

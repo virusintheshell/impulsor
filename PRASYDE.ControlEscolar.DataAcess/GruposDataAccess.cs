@@ -405,8 +405,7 @@ namespace PRASYDE.ControlEscolar.DataAcess
             }
             return objProgramas;
         }
-
-        //-------------------------------------//
+               
         private List<GruposModalidades> ObtenerModalidades(DataTable datosGenerales, int idPrograma, ref int respuesta)
         {
             List<GruposModalidades> objModalidades = new List<GruposModalidades>();

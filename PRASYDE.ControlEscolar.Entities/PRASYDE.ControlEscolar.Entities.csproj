@@ -51,7 +51,9 @@
     <Compile Include="Catalogos.cs" />
     <Compile Include="Documentos.cs" />
     <Compile Include="Evaluaciones.cs" />
+    <Compile Include="Excel.cs" />
     <Compile Include="ExpedienteDigital.cs" />
+    <Compile Include="Finanzas\CalendarioDePagos.cs" />
     <Compile Include="Formulario.cs" />
     <Compile Include="General.cs" />
     <Compile Include="Grupos.cs" />

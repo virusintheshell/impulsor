@@ -13,7 +13,6 @@ namespace PRASYDE.ControlEscolar.Business
 
     public class EvaluacionesBusiness
     {
-
         public static RespuestaGeneral Editar(EdicionCalificacionFinal propiedades, ref HttpStatusCode Codigo_Respuesta)
         {
             Guid token = Guid.Empty;
@@ -64,6 +63,22 @@ namespace PRASYDE.ControlEscolar.Business
                 return respuesta;
             }
             catch (Exception exception) { throw exception; }
+        }
+
+        public static ExcelSheetResponse ExportarEvaluaciones(string idGrupo, int nivel)
+        {
+            Guid token = Guid.Empty;
+
+            EvaluacionesDataAccess obj = new EvaluacionesDataAccess();
+            RespuestaGeneral ObjetoRespuesta = new RespuestaGeneral();
+            ExcelSheetResponse response = new ExcelSheetResponse();
+
+            if (ValidarCabeceras.ContieneCabeceras(ref ObjetoRespuesta, ref token))
+            {
+                response = obj.ExportarCalificacionesExcel(idGrupo, nivel);
+            }
+
+            return response;
         }
     }
 }
