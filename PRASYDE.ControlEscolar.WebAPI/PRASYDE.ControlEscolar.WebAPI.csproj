@@ -133,6 +133,7 @@
     <Compile Include="Controllers\AlumnosController.cs" />
     <Compile Include="Controllers\AsignaturaController.cs" />
     <Compile Include="Controllers\AvisosController.cs" />
+    <Compile Include="Controllers\CatalogoDocumentosController.cs" />
     <Compile Include="Controllers\ConceptosController.cs" />
     <Compile Include="Controllers\DetalleModalidadController.cs" />
     <Compile Include="Controllers\EvaluacionesController.cs" />

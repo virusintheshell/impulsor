@@ -68,6 +68,7 @@
     <Compile Include="AvisosDataAccess.cs" />
     <Compile Include="BaseDataAccess.cs" />
     <Compile Include="CambioGrupoDataAccess.cs" />
+    <Compile Include="CatalogoDocumentosDataAccess.cs" />
     <Compile Include="CatalogosDataAccess.cs" />
     <Compile Include="ClasesExcel\ExportarCalificaciones.cs" />
     <Compile Include="ConceptosDataAcceess.cs" />

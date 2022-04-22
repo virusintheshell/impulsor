@@ -46,6 +46,7 @@
     <Compile Include="Asistencia.cs" />
     <Compile Include="Avisos.cs" />
     <Compile Include="CambioGrupo.cs" />
+    <Compile Include="CatalogoDocumentos.cs" />
     <Compile Include="Conceptos.cs" />
     <Compile Include="CredencialesAcceso.cs" />
     <Compile Include="Catalogos.cs" />

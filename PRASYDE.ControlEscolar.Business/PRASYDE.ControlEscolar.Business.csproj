@@ -53,6 +53,7 @@
     <Compile Include="AsignaturasBusiness.cs" />
     <Compile Include="AvisosBusiness.cs" />
     <Compile Include="CambioGrupoBusiness.cs" />
+    <Compile Include="CatalogoDocumentosBusiness.cs" />
     <Compile Include="ConceptosBusiness.cs" />
     <Compile Include="DetalleModalidadesBusiness.cs" />
     <Compile Include="EvaluacionesBusiness.cs" />
